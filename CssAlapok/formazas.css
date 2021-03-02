@@ -1,0 +1,149 @@
+/* Megjegyzés CSS-ben */
+
+/* Mi a CSS? Cascading Style Sheet - Lépcsőzetes stíluslap */
+/* Kiválasszuk, hogy mely elemeket szeretnénk formázni, majd felsoroljuk a beállításokat
+A kiválasztás szelektorokkal történik
+*/
+/* Ha egy olyan elemet jelölünk ki, mely tartalmaz más elemeket, akkor egyes tulajdonságokat megörökölnek a benne lévő elemek */
+/* Típusszelektor: Az elemeket a típusa alapján választja ki */
+body {
+	/* Tulajdonság és érték párokkal megjelenési beállítások */
+	background-color: lightblue; /* Háttérszín */
+	color: darkblue; /* Betűszín */
+	
+	background-color: rgb(193, 247, 236); /* Háttérszín rgb-vel */
+	/* Ha többször van megadva ugyanaz tulajdonság más értékkel, és a megadások egyenrangúak, akkor a legutolsó fog érvényesülni. */
+	color: #28295e;
+	
+	/* Betűtípus */
+	font-family: Arial, Verdana, sans-serif;
+}
+
+/* Színmegadási módok, ha valaminek a színét állítjuk be
+	Alapszínek angol szavai is működnek
+	RGB színkód
+		Red Green Blue: a 3 szín mennyiségét 256-os skálán megadjuk
+		Arányoktól függően lesz egy árnyalag
+		256^3 = ~ 16 700 000
+		Fekete: 0 0 0
+		Fehér: 255 255 255
+		Megadás:
+		tulajdonság: rgb(200,180,50);
+	Hexadecimális színkód:
+		16-os számrendszerbeli 3 2 jegyű szám egybeírva
+		Ugyanúgy az RGB elvet követi
+		Összesen 6 jegyű szám, az alábbi szerkezetben
+		#rrggbb
+		Alábbiak a számok: 0 1 2 3 4 5 6 7 8 9 a b c d e f
+		#000000
+		#ffffff
+		Megadási mód:
+			tulajdonság: #12f8d6;
+		Lehet rövídíteni:
+			Ha a színhez tartozó részek egyezőek, akkor összevonható:
+				#88dd22 -> #8d2
+*/
+
+/* Betűtípus családok használata
+	font-family tulajdonság
+	1 vagy több érték felsorolása
+	Az első bekapcsolható betűtípus fog működni
+	Megadhatunk betűtípus fajtát is:
+		serif: talpas
+			Nyomtatáshoz talpas.
+		sans-serif: talpnélküli
+			Képernyőkön érdemes talpnélkülit használni
+		monospace: rögzített szélességű
+			Minden karakter ugyanolyan széles
+*/
+
+p {
+	background-color: #fbfbfb;
+	
+	/* Box modell szemléltetése */
+	/* Legbelső: tartalom */
+	width: 800px; /* Szélesség */
+	height: 100px; /* Magasság */
+	/* Ha nem fér el a tartalom a fix méretben, akkor az túllóg */
+	overflow: auto; /* Túllógás kezelése: hidden, scroll, auto */
+	
+	/* Padding: belső margó (Alapértelmezetten hozzáadódik a tartalomhoz) */
+	/* Mind a 4 oldal együtt */
+	padding: 20px;
+	/* Tengelyenkénti megadás */
+	padding: 10px 20px; /* 1:y, 2:x */
+	/* Minden oldal megadása külön */
+	padding: 10px 15px 20px 25px; /* Felsőtől jobbra */
+	/* Csak egy oldal megadása */
+	padding-top: 5px;
+	padding-bottom: 15px;
+	/* left, right */
+	/* Előfordul olyan, hogy megadunk minden oldalt 1 értékkel, majd csak 1 oldalt külön újraadunk. */
+	padding: 20px;
+	padding-bottom: 10px;
+	
+	/* Szegély - Ez is alapértelmezetten hozzáadódik a tartalomhoz */
+	/* Szegély vastagság, típus, szín */
+	/* Minden egyben */
+	border: 3px dashed #bf4b43;
+	/* Minden oldalra csak vastagság */
+	border-width: 5px; /* border-color, border-style */
+	/* Csak egy oldalra mind a 3 tulajdonság */
+	border-top: 3px double blue;
+	
+	/* Csak egy oldal, csak egy tulajdonság */
+	border-left-color: green;
+	border-bottom-style: solid;
+	border-right-width: 10px;
+	
+	/* Margó: Ugyanúgy működik, mint a padding */
+	/* padding helyett margin */
+	margin: 20px 15px;
+	margin-right: 0;
+	
+	/* Margó plusz lehetőség */
+	/* Vízszintesen automatikusra állíthatjuk, ezáltal a doboz középre kerül */
+	margin: 16px auto;
+	
+	/* Át lehet állítani a méretezést úgy, hogy a paddingel és a szegéllyel együtt adja meg a doboz méretét. Ilyenkor a tartalom mérete csökkem */
+	box-sizing: border-box; /* content-box */
+}
+h2{
+    text-transform: uppercase;
+    text-decoration: underline;
+    text-decoration-style: wavy;
+    text-decoration-color: red;
+    
+    letter-spacing: 5px;
+    
+}
+
+h1{
+    text-align: center;
+}
+
+p{
+    text-align: justify;
+    word-spacing: 5px;
+    line-height: 150%;
+    box-shadow: 5px 10px;
+    box-shadow: 3px 6px 5px 3px #555;
+}
+a:link{
+    text-decoration: none;
+}
+a:hover{
+    color: green;
+    text-transform: uppercase;
+}
+a:visited{
+    color: black;
+}
+a:active{
+    background-color: black;
+    color: yellow;
+}
+p:hover{
+    font-weight: bold;
+    font-size: 20px;
+}

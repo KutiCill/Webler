@@ -1,0 +1,25 @@
+body{
+    background-color: gray;
+    font-family: sans-serif;
+    
+}
+article{
+    background-color: lightgreen;
+}
+footer{
+    background-clip: pink;
+}
+
+article p{
+    text-decoration: underline;
+}
+footer p{
+    font-style: italic;
+}
+main p{
+    color: darkred;
+}
+
+main , header, article, footer{
+    overflow: hidden;
+}

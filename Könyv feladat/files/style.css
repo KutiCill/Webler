@@ -1,0 +1,67 @@
+body{
+    background-image: url(konyv_hatter.jpg);
+    color: #432;
+    
+}
+#keret{
+    width: 770px;
+    background-color: #CA8;
+    border: 1px solid #eca;
+    margin: 0 auto;
+}
+div{
+    
+}
+h1{
+    font-size: 24px;
+}
+h2{
+   text-transform: uppercase; 
+}
+h3{
+    
+}
+p{
+    
+}
+span{
+    
+}
+.keret_szoveg{
+    text-align: center;
+}
+.konyv{
+    background-color: #ECA;
+    border: 1px solid #432;
+    border-radius: 8px;
+    width: 650px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    padding: 16px;
+    box-shadow: 5px 5px;
+}
+.konyv img{
+    width: 120px;
+    border: 1px solid #432;
+    float: left;
+    margin-right: 16px;
+    margin-bottom: 16px;
+
+}
+.konyv h1{
+    margin-top: 0;
+    
+}
+.konyv h3{
+    font-size: 16px;
+    font-weight: normal;
+
+}
+.konyv p{
+    text-align: justify;
+    clear: left;
+    
+}
+.kiemelt{
+    font-weight: bold;
+}

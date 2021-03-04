@@ -1,0 +1,38 @@
+body{
+    font-family: sans-serif;
+}
+
+
+main{
+    width: 800px;
+    margin: 0 auto;
+}
+
+main, header, section, footer{
+    border: 1px solid #555;
+    overflow: hidden;
+}
+.pirosSzoveg{
+    color: red;
+    font-weight: bold;
+}
+.doltalahozott{
+    font-style: italic;
+    text-decoration: underline;
+}
+
+
+section .pirosSzoveg{
+    text-transform: uppercase;
+}
+#egyediBekezdse{
+    background-color: yellow;
+    color: blue;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+p.pirosSzoveg{
+    text-decoration: overline;
+    font-size:  20px;
+}

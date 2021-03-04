@@ -1,0 +1,13 @@
+A files mappában dolgozz.
+Hozd létre a style.css-t, és ennek segítségével formázd meg az oldalt a 'minta.png' alapján.
+
+Javasolt színkódok:
+#CA8 a külsõ keret háttérszíne
+#ECA a külsõ keret határoló vonalának színe, és a belsõ dobozok háttérszíne
+#432 a betûk, a belsõ határoló vonalak, és az árnyék színei
+
+Javasolt fõbb méretek:
+a külsõ keret szélessége 770 képpont
+a könyvborítók képeinek szélessége 120 képpont
+
+Sarkok lekerekítése 5-6 pixel

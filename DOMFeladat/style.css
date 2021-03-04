@@ -10,6 +10,47 @@ main, header, footer, article{
 main{
     width: 1000px;
     background-color: white;
-    margin: 0px;
+    margin: 0 auto;
+    
+}
+header{
+    height: 250px;
+    background-image: url('header.jpg');
+   /* background-size: 90%;
+    background-repeat: no-repeat;
+    background-position: 80% 70%; */
+    background-position: 50% 25%;
+  
+}
+header h1{
+    color: white;
+    font-size: 50px;
+    margin-top: 96px;
+    margin-left: 50px;
+    
+}
+article{
+    padding: 0 14px
+        
+}
+article img{
+    width: 450px;
+    float: left;
+    margin-right: 14px;
+}
+article p{
+    line-height: 150%;
+    word-spacing: 2px;
+    text-indent: 40px;
+    
+}
+footer{
+    background-color: #333;
+    color: white;
+    margin-top: 60px;
+}
+footer p{
+   text-align: center;
+    margin: 8px 0;
     
 }

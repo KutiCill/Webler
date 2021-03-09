@@ -1,0 +1,77 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #0c0b52;
+    background-image: url('img/bg.png');
+}
+
+#torzs {
+    box-sizing: border-box;
+    width: 1000px;
+    overflow: hidden;
+    background-color: #f0e8c7;
+    color: #0c0b52;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.kepkeret {
+    overflow: hidden;
+    box-shadow: 0 1px 5px -1px #555;
+    margin-left: 20px;
+
+}
+
+.kepkeret img {
+    width: 100%;
+}
+
+.kepkeret p {
+    margin-top: 10px;
+    margin-bottom: 0;
+}
+
+a {
+    font-size: 18px;
+    transition: all 0.3s ease 0s;
+}
+
+/* Megoldás ezután a sor után! */
+
+h1{
+    text-align: center;
+    text-transform: uppercase;
+}
+
+h2{
+    text-decoration: underline;
+    letter-spacing: 2px;
+}
+p{
+    font-size: 18px;
+    text-align: justify;
+    line-height: 140%;   
+}
+.kepkeret{
+    width: 350px;
+    height: auto;
+    padding: 10px;
+    background-color: white;  
+    display: block;
+    float: right;
+}
+ul{
+    font-size: 18px;
+    line-height: 180%;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+a:hover{
+    color: #0c0b52;
+    letter-spacing: 4px;
+}
+a:checked{
+    color: red;
+   letter-spacing: 0px;
+}

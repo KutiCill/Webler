@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="utf-8">
+    <title>Űrlapok és bevitelő mezők</title>
+    <link rel="stylesheet" href="style.css">
+    </head>
+<body>
+    <h1>Űrlapok és bevitelő mezők</h1>
+    
+    <form action="https://google.hu" method="get">
+        <label>Írj be valamilyen szöveget:</label>
+    <input type="text" name="szoveg" required minlength="6" maxlength="8" value="Írj ide!">
+        
+        
+        <br>
+        <br>
+    <label>Szám beviteli mező:</label>    
+        <input type="number" name="szam" min="10" max="2000" step="0.1">
+        
+        <br>
+        <br>
+        
+        <label>Jelszó:</label>
+        <input type="password" name="jelszo" placeholder="Írd be a jelszót">
+        
+        <br>
+        <br>
+        
+        <label>E-mail beviteli mező:</label>
+        <input type="email" name="email">
+        
+        <br>
+        <br>
+        
+        <label>Dátum beviteli mező:</label>
+        <input type="date" name="datum" value="2021-03-09">
+        
+        <br>
+        <br>
+        
+        <label>Legördülő választó:</label>
+        <select> name="varos"
+        <option>Budapest</option>
+        <option>Debrecen</option>
+        <option selected>Szolnok</option>
+        <option>Eger</option>
+        </select>
+        
+        <br>
+        <br>
+        
+        <label>Jelölő négyzet:</label>
+        <input type="checkbox" name="pipa" checked>
+        
+        <br>
+        <br>
+        
+        <label>Rádio gombok:</label>
+        <input type="radio" name="kerdes" checked>Igen
+        <input type="radio" name="kerdes">Nem
+        <input type="radio" name="kerdes">Talán
+        
+        <br>
+        <br>
+        
+        <label>Szövegmező:</label>
+        <textarea name="nagyszoveg" cols="60" rows="5">
+Tisztelt Címzett! 
+Érdeklődni szeretnék....</textarea>
+        
+        
+        
+        <br>
+        <br>
+        
+        <button type="reset">Visszaállítás</button>
+        <button type="submit">Küldés</button>
+        
+        <input type="submit" value="Küldés2" name="kuldGomb">
+        
+    </form>
+    
+    </body>
+
+</html>
